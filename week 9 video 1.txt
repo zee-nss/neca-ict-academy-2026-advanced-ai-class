@@ -1,0 +1,14 @@
+a large language model is a model that handles description of what a task is  and gives a tokenized output
+it predicts the output which is the words and actually the next token(the last piece of words)
+
+tokens, contxt windows and cost
+token- they are how llm mearsures text 100 tokens = 75 words
+
+
+Automation Prompt Element 
+1. Role
+2. Task 
+3. context
+4. Constraints
+5. output format
+6. examples

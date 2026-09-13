@@ -1,0 +1,49 @@
+# Secrets - NEVER commit these
+.env
+.env.local
+service_account.json
+credentials.json
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Generated files
+output/
+*.xlsx
+*.png
+*.csv
+*.pdf
+
+# Model files
+models/
+*.pkl
+*.h5
+*.joblib
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3

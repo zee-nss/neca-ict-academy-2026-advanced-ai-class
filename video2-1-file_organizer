@@ -1,0 +1,16 @@
+# Quick clean for screenshot purposes
+import pandas as pd
+import os
+
+base = os.path.expanduser("~/Desktop/neca ict academy 2026 advanced ai class")
+df = pd.read_csv(os.path.join(base, "messy_sales.csv"))
+
+# Quick clean
+df = df.drop_duplicates()
+df['date'] = pd.to_datetime(df['date'], errors='coerce')
+df['quantity'] = df['quantity'].fillna(df['quantity'].median())
+df['region'] = df['region'].fillna('Unknown')
+
+# Save clean version
+df.to_csv(os.path.join(base, "messy_sales_CLEAN_SCREENSHOT.csv"), index=False)
+print(" Clean version saved for screenshot")
